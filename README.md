@@ -24,14 +24,6 @@
 <ul>
 <li>Classe principale ManadjaApplication.java</li>
 <img src="captures/TestDao.png">
-<<<<<<< HEAD
 <li>Test</li>
 <img src="captures/Test.png">
-=======
-</ul>
-<br/>
-<ul>
-<li>Test couche DAO</li>
-<img src="captures/TestDao.png">
->>>>>>> refs/remotes/origin/main
 </ul>
