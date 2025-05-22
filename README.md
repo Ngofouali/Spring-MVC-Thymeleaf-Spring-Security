@@ -45,6 +45,6 @@
 <img src="captures/supprimerProduitControleur.png">
 <li><h4>Vue Thymeleaf pour supprimer un produit</h4></li>
 <img src="captures/vueThymeleafSupprimerProd.png">
-li><h4>Page template basée sur Thymeleaf layout et Bootstrap</h4></li>
+<li><h4>Page template basée sur Thymeleaf layout et Bootstrap</h4></li>
 <img src="captures/pageTemplateThymeleafBootstrap.png">
 </ul>
