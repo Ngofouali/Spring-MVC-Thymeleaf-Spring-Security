@@ -22,8 +22,29 @@
 <br/>
 <h3>4. Test de la couche DAO</h3>
 <ul>
-<li>Classe principale ManadjaApplication.java</li>
+<li><h4>Classe principale ManadjaApplication.java</h4></li>
 <img src="captures/TestDao.png">
-<li>Test</li>
+<li><h4>Test</h4></li>
 <img src="captures/Test.png">
+<li><h4>Test de connexion à la base H2 Database</h4></li>
+<img src="captures/connexion-H2.png">
+<img src="captures/conx.png">
+<img src="captures/Test-enregistrements.png">
+</ul>
+<br/>
+<h3>5. Désactivation de la protection par défaut de Spring Security</h3>
+<img src="captures/Desactivation-protection-Spring-Security.png">
+<br>
+<h3>6. Création du contrôleur Spring MVC et des vues Thymeleaf</h3>
+<ul>
+<li><h4>Contrôleur pour afficher la liste des produits</h4></li>
+<img src="captures/Controleur-Afficher-Produits.png">
+<li><h4>Vue Thymeleaf pour l'affichage de la liste des produits</h4></li>
+<img src="captures/vueThymeleafAfficherProduits.png">
+<li><h4>Contrôleur pour supprimer un produit</h4></li>
+<img src="captures/supprimerProduitControleur.png">
+<li><h4>Vue Thymeleaf pour supprimer un produit</h4></li>
+<img src="captures/vueThymeleafSupprimerProd.png">
+li><h4>Page template basée sur Thymeleaf layout et Bootstrap</h4></li>
+<img src="captures/pageTemplateThymeleafBootstrap.png">
 </ul>

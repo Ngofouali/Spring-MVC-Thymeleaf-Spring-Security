@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="header"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>Créer un produit | Manadja</title>
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/5.3.5/css/bootstrap.min.css"></link>
+</head>
+<body>
+    <div layout:fragment="content">
+        <form method="post" th:action="@{/productSave}">
+            <div class="mb-3">
+                <label class="form-label">Nom : </label>
+                <input class="form-control" type="text" name="nom" th:value="${newProduct.nom}"/>
+                <span class="text-danger" th:errors="${newProduct.nom}"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Prix : </label>
+                <input class="form-control" type="number" name="prix" th:value="${newProduct.prix}"/>
+                <span class="text-danger" th:errors="${newProduct.prix}"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Quantité en stock : </label>
+                <input class="form-control" type="number" name="quantiteEnStock" th:value="${newProduct.quantiteEnStock}"/>
+                <span class="text-danger" th:errors="${newProduct.quantiteEnStock}"></span>
+            </div>
+
+            <button type="submit" class="btn btn-success">Enregistrer</button>
+            <a class="btn btn-danger" th:href="@{/index}">Annuler</a>
+
+        </form>
+    </div>
+
+</body>
+</html>

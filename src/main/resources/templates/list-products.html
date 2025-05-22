@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="header"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>Liste des produits | Manadja</title>
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/5.3.5/css/bootstrap.min.css"></link>
+</head>
+<body>
+    <div layout:fragment="content">
+        <div class="p-3">
+            <a class="btn btn-success" th:href="@{/createProduct}">Ajouter produit</a>
+        </div>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nom</th>
+                    <th>Prix</th>
+                    <th>Quantité en stock</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr th:each="product : ${listOfProducts}">
+                    <td th:text="${product.id}"></td>
+                    <td th:text="${product.nom}"></td>
+                    <td th:text="${product.prix}"></td>
+                    <td th:text="${product.quantiteEnStock}"></td>
+                    <td>
+                        <a class="btn btn-danger" th:href="@{/delete(id=${product.id})}">Supprimer</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
