@@ -2,9 +2,12 @@ package com.icodi.manadja.web;
 
 import com.icodi.manadja.entities.Product;
 import com.icodi.manadja.repository.ProductRepository;
+import jakarta.validation.Valid;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
@@ -37,8 +40,15 @@ public class ProductController {
 
     @GetMapping("/createProduct")
     public String createProduct(Model model) {
-        model.addAttribute("newProduct", new Product());
+        model.addAttribute("product", new Product());
         return "create-product";
+    }
+
+    @PostMapping("/saveProduct")
+    public String productSave(@Valid Product product, BindingResult bindingResult, Model model) {
+        if (bindingResult.hasErrors()) return "create-product";
+        productRepository.save(product);
+        return "redirect:/index";
     }
 
 

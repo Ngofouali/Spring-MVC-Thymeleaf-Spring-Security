@@ -47,4 +47,15 @@
 <img src="captures/vueThymeleafSupprimerProd.png">
 <li><h4>Page template basée sur Thymeleaf layout et Bootstrap</h4></li>
 <img src="captures/pageTemplateThymeleafBootstrap.png">
+<br/>
+<img src="captures/pageTemplateThBoot.png">
+<br/>
+<li><h4>Saisie et ajout d'un produit avec la validation du formulaire</h4></li>
+<img src="captures/saisieValidation.png">
+<br/>
+<img src="captures/Enreg.png">
+<br/>
+<img src="captures/result.png">
 </ul>
+<br/>
+<h3>7. Sécurisation de l'application avec Spring Security</h3>

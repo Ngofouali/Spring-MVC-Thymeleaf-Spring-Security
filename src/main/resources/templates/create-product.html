@@ -11,23 +11,23 @@
 </head>
 <body>
     <div layout:fragment="content">
-        <form method="post" th:action="@{/productSave}">
+         <form method="post" th:action="@{/saveProduct}">
             <div class="mb-3">
                 <label class="form-label">Nom : </label>
-                <input class="form-control" type="text" name="nom" th:value="${newProduct.nom}"/>
-                <span class="text-danger" th:errors="${newProduct.nom}"></span>
+                <input class="form-control" type="text" name="nom" th:value="${product.nom}"/>
+                <span class="text-danger" th:errors="${product.nom}"></span>
             </div>
 
             <div class="mb-3">
                 <label class="form-label">Prix : </label>
-                <input class="form-control" type="number" name="prix" th:value="${newProduct.prix}"/>
-                <span class="text-danger" th:errors="${newProduct.prix}"></span>
+                <input class="form-control" type="number" name="prix" th:value="${product.prix}"/>
+                <span class="text-danger" th:errors="${product.prix}"></span>
             </div>
 
             <div class="mb-3">
                 <label class="form-label">Quantité en stock : </label>
-                <input class="form-control" type="number" name="quantiteEnStock" th:value="${newProduct.quantiteEnStock}"/>
-                <span class="text-danger" th:errors="${newProduct.quantiteEnStock}"></span>
+                <input class="form-control" type="number" name="quantiteEnStock" th:value="${product.quantiteEnStock}"/>
+                <span class="text-danger" th:errors="${product.quantiteEnStock}"></span>
             </div>
 
             <button type="submit" class="btn btn-success">Enregistrer</button>

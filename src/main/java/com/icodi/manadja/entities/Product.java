@@ -17,18 +17,16 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank(message = "Le nom ne peut être vide")
+    @NotEmpty(message = "Le nom ne peut être vide")
     @Size(min = 10, max = 50, message = "Le nom doit contenir entre 10 et 100 caractères")
-    @Column(nullable = false, length = 100)
     private String nom;
 
-    @NotNull(message = "Le prix ne peut être vide")
-    @PositiveOrZero(message = "Le prix doit être posotif ou égal à 0")
-    @Column(nullable = false)
+    //@NotNull(message = "Le prix ne peut être vide")
+    @Min(0)
     private Double prix;
 
-    @NotNull(message = "La quantité ne peut être vide")
-    @Min(value = 0, message = "La quantité doit être au moins égale à 0")
-    @Column(nullable = false)
+    //@NotNull(message = "La quantité ne peut être vide")
+    @Min(value = 1, message = "La quantité doit être au moins égale à 1")
+    //@Min(1)
     private Integer quantiteEnStock;
 }
