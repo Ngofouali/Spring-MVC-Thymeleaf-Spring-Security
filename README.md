@@ -59,3 +59,18 @@
 </ul>
 <br/>
 <h3>7. Sécurisation de l'application avec Spring Security</h3>
+<img src="captures/SecurityConfig.png">
+<ul>
+<li>Test avec l'utilisateur user1</li>
+<img src="captures/LoginUser1.png">
+<img src="captures/LogUser1OK.png">
+<img src="captures/TestSuppressionUser1.png">
+<img src="captures/TestAjoutUser1.png">
+<img src="captures/EchecAjoutProduitUser1.png">
+<li>Test avec l'utilisateur admin</li>
+<img src="captures/LoginAdmin.png">
+<img src="captures/LoginAdminOK.png">
+<img src="captures/AjoutAdmin.png">
+<img src="captures/AjoutAdminOk.png">
+
+</ul>
